@@ -3,64 +3,152 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Lauren Stroud</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&family=Poppins&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/569bf79f86.js" crossorigin="anonymous"></script>
+  <title>Lauren Stroud - Front End Developer</title>
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--- Style sheets --->
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <!--- fonts --->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!--- Awesome font --->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Barlow:wght@400;700;900&family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <section id="landing-page">
-    <div class="landing-nav">
-      <ul class="landing-nav-list">
-        <li class="landing-nav-items"><a href="#">Home</a></li>
-        <li class="landing-nav-items"><a href="#">About Me</a></li>
-        <li class="landing-nav-items"><a href="#">Projects</a></li>
-        <li class="landing-nav-items"><a href="#">Contact Me</a></li>
+
+
+
+  <header class="header">
+    <nav class="nav">
+      <ul class="nav__ul">
+        <li><a href="#about-me">About me </a></li>
+        <li><a href="#skills">Skills </a></li>
+        <li><a href="#projects">Projects </a></li>
+        <li><a href="#contact-me">Contact me </a></li>
       </ul>
+<img class="hamburger" src="./assets/hamburger.svg" alt="">
+    </nav>
+    <div class="header__wrapper">
 
+
+
+      <h1>Lauren Stroud</h1>
+      <p>Front End Developer</p>
+
+      <a href="#projects"><button type="button" name="button"> <i class="fas fa-chevron-down"></i>    See what I can do    <i class="fas fa-chevron-down"></i></button></a>
     </div>
-    <h1>Lauren Stroud</h1>
-    <h2>Front End Developer</h2>
-    <button type="button" name="button" class="landing-cta"><i class="fas fa-chevron-down"></i> Take a look at what I have done <i class="fas fa-chevron-down"></i></button>
-  </section>
-  <div id="nav-bar">
-    <ul class="nav-bar">
-      <li class="nav-items"><a href="#">Home</a></li>
-      <li class="nav-items"><a href="#">About Me</a></li>
-      <li class="nav-items"><a href="#">Projects</a></li>
-      <li class="nav-items"><a href="#">Contact Me</a></li>
-    </ul>
 
-  </div>
+  </header>
+  <main class="main">
+    <div class="main__wrapper">
+      <!--- About me --->
+      <section id="about-me" class="main__about-me">
 
-  <section id="about-me">
-    <h1> So who am I?</h1>
-    <div class="about-me-flex">
-      <div class="about-me-photo">
-        <img class="about-me-img" src="images/cookie.jpg" alt="">
-      </div>
-      <div class="about-me-info">
-        <h3>Hello!</h3>
-        <p>My Name's Lauren and I am front end developer with an interest in the great out doors. I live along the beautiful south coast of england and am often found outside when i'm not chained to my desk for whatever reason.</p>
-      </div>
+        <div class="main__hero-img">
+          <img class="" src="./assets/hero.jpg" alt="Hero-image">
+        </div>
+
+
+        <div class="main__about-me--content">
+          <h2>About me</h2>
+          <p>
+            Hello! I’m Lauren Stroud, an aspiring front end web developer from Bournemouth, UK.
+            <br>
+            <br>
+            I’m a front-end enthusiast with a passion for learning. If I'm not at my desk improving my skills, I'm out and about enjoying the great outdoors that the south coast of England has to offer. From cycling to kayaking, camping and live
+            music I'm always raring to get out and enjoy what beautiful Bournemouth has to offer.
+
+            <br>
+            <br>
+            I’m a hard worker with excellent time keeping skills and a desire to push myself. I am always learning, always pushing to improve on what I don’t understand with a good memory for facts and a desire to learn.
+
+          </p>
+        </div>
+
+      </section>
+      <section id="skills" class="main__skills-section">
+
+        <div class="main__skills-wrapper">
+
+          <h3>Skills</h3>
+<ul class="main__skills--list">
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>Sass</li>
+  <li>Javascript</li>
+  <li>Atom</li>
+  <li>Github</li>
+  <li>jQuery</li>
+</ul>
+
+
+        </div>
+      </section>
+
+      <!--- Projects/gallery --->
+      <section id="projects" class="main__projects">
+
+        <h2> Projects</h2>
+        <p> Browse through my projects and see just what I can do</p>
+
+
+        <ul class="main__projects--gallery-wrapper">
+          <li><a href="https://commandermeow.github.io/The-planets/"> <img class="projects__gallery-img" src="./assets/screenshots/the-planets.jpeg" alt="the planets"> </a>
+            <h4>The Planets</h4>
+          </li>
+          <li><a href="https://commandermeow.github.io/Blogr-Landing-Page/"> <img class="projects__gallery-img" src="./assets/screenshots/blogr.jpeg" alt="blogr"></a>
+            <h4>Blogr Landing page</h4>
+          </li>
+          <li><a href="https://commandermeow.github.io/base-apparel/"> <img class="projects__gallery-img" src="./assets/screenshots/coming-soon.jpeg" alt="web store coming soon"> </a>
+            <h4>Base Apparel - Coming soon</h4>
+          </li>
+          <li><a href="https://commandermeow.github.io/Fylo-desk-theme-landing-page/"> <img class="projects__gallery-img" src="./assets/screenshots/fylo-dark.jpeg" alt="fylo-dark"> </a>
+            <h4>Fylo Landing Page</h4>
+          </li>
+          <li><a href="https://commandermeow.github.io/Sunnyside-agency-landing/"> <img class="projects__gallery-img" src="./assets/screenshots/sunnyside-agency.jpeg" alt="sunnyside-agency"> </a>
+            <h4>Sunside agency landing page</h4>
+          </li>
+          <li><a href="https://commandermeow.github.io/faq-accordion-card-main/"> <img class="projects__gallery-img" src="./assets/screenshots/accordian.jpeg" alt="accordian"> </a>
+            <h4>Accordian layout</h4>
+          </li>
+        </ul>
+
+      </section>
+
+      <!--- Contact me--->
+      <section id="contact-me" class="main__contact-me">
+        <div class="contact-me_wrapper">
+          <h2>Contact me</h2>
+          <p>Feel free to drop me a message and see what i'm up to!</p>
+
+           <div class="">
+            <button class="contact_button"action="mailto:laurenstroud13@gmail.com" method="post" > <i class="fas fa-envelope"></i></i></button>
+
+            <a href="https://www.linkedin.com/in/lauren-stroud-848bb9219/"> <button class="contact_button" type="button" name="button"> <i class="fab fa-linkedin-in"></i></button></a>
+            <a href="https://github.com/CommanderMeow"> <button class="contact_button"type="button" name="button"> <i class="fab fa-github"></i> </button> </a>
+            <a href="https://twitter.com/Laurenstroud13"> <button class="contact_button"type="button" name="button"> <i class="fab fa-twitter"></i></button> </a>
+            </div>
+
+        </div>
+      </section>
     </div>
-    <div class="donut-flex">
-      <img class="skill-donut-img" src="images/skill-donuts-html.png" alt="">
-      <img class="skill-donut-img" src="images/skill-donuts-css.png" alt="">
-      <img class="skill-donut-img" src="images/skill-donuts-js.png" alt="">
+  </main>
+  <footer class="footer">
+    <h4>Lauren Stroud</h4>
+    <div class="">
+      <a href="https://www.linkedin.com/in/lauren-stroud-848bb9219/"> <i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/CommanderMeow"> <i class="fab fa-github"></i> </a>
+      <a href="https://twitter.com/Laurenstroud13"> <i class="fab fa-twitter"></i> </a>
     </div>
-  </section>
-  <section id="projects">
-
-  </section>
-  <section id="contact-me">
-
-  </section>
-
-  <script src="index.js"></script>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="index.js"></script>
 </body>
 
 </html>
